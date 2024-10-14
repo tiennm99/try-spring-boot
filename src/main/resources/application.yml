@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: try-spring-boot
+  couchbase:
+    env:
+      timeouts:
+        view: 15000
+        query: 15000
+    connection-string: couchbase://127.0.0.1 # Your Couchbase connection string
+    username: username # Your Couchbase username
+    password: password # Your Couchbase password
+  data:
+    couchbase:
+      bucket-name: try-spring-boot # Your Couchbase bucket name
+      auto-index: true
